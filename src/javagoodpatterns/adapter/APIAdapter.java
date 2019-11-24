@@ -8,7 +8,7 @@ import java.time.LocalDate;
 
 public class APIAdapter implements LibraryAPI {
     private User user;
-    private LibraryAPIv2Impl libraryAPIv2;
+    private LibraryAPIv2Impl libraryAPIv2 = new LibraryAPIv2Impl();
 
     public APIAdapter(LibraryAPIv2 libraryAPIv2, User user) {
         this.user = user;
